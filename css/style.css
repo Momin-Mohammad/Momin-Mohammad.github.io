@@ -428,7 +428,7 @@ code {
 
 #nameDiv{
   border: 1px solid transparent;
-  width: 70%;
+  width: 100%;
   margin: auto;
   margin-top: 10%;
   text-align: center;
@@ -462,20 +462,19 @@ pre {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto; }
+  margin: auto; }
   @media (min-width: 576px) {
     .container {
-      max-width: 540px; } }
+      max-width: 95%; } }
   @media (min-width: 768px) {
     .container {
-      max-width: 720px; } }
+      max-width: 85%; } }
   @media (min-width: 992px) {
     .container {
-      max-width: 960px; } }
+      max-width: 85%; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1140px; } }
+      max-width: 85%; } }
 
 .container-fluid {
   width: 100%;
@@ -496,9 +495,7 @@ pre {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px; }
+  flex-wrap: wrap; }
 
 .no-gutters {
   margin-right: 0;
@@ -516,8 +513,8 @@ pre {
 .col-xl-auto {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px; }
+  padding-right: 10px;
+  padding-left: 10px; }
 
 .col {
   -ms-flex-preferred-size: 0;
@@ -4811,7 +4808,7 @@ a.close.disabled {
   top: 0;
   left: 0;
   z-index: 1040;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: #000; }
   .modal-backdrop.fade {
@@ -5564,7 +5561,25 @@ button.bg-dark:focus {
   display: -ms-inline-flexbox !important;
   display: inline-flex !important; }
 
+  @media (min-width: 359px){
+    .d-md-none {
+      display: none !important;
+    margin: auto; }
+    .d-md-block {
+      display: block !important;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px; }
+  }
+
 @media (min-width: 576px) {
+  .d-md-none {
+    display: none !important;
+  margin: auto; }
+  .d-md-block {
+    display: block !important;
+  width: 90%;
+  margin: auto; }
   .d-sm-none {
     display: none !important; }
   .d-sm-inline {
@@ -5590,13 +5605,16 @@ button.bg-dark:focus {
 
 @media (min-width: 768px) {
   .d-md-none {
-    display: none !important; }
+    display: none !important;
+  margin: auto; }
   .d-md-inline {
     display: inline !important; }
   .d-md-inline-block {
     display: inline-block !important; }
   .d-md-block {
-    display: block !important; }
+    display: block !important;
+  width: 90%;
+  margin: auto; }
   .d-md-table {
     display: table !important; }
   .d-md-table-row {
@@ -7314,7 +7332,8 @@ button.bg-dark:focus {
   .px-md-4 {
     padding-left: 1.5rem !important; }
   .p-md-5 {
-    padding: 3rem !important; }
+    padding: 3rem !important;
+  margin: auto; }
   .pt-md-5,
   .py-md-5 {
     padding-top: 3rem !important; }
@@ -8125,9 +8144,9 @@ a.text-dark:hover, a.text-dark:focus {
   @page {
     size: a3; }
   body {
-    min-width: 992px !important; }
+    min-width: 100% !important; }
   .container {
-    min-width: 992px !important; }
+    min-width: 100% !important; }
   .navbar {
     display: none; }
   .badge {

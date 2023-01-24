@@ -29,9 +29,9 @@
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
 	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar" style="width:100%">
 	    <div class="container">
-		  <p style="margin-top: 10px;"><a href="https://drive.google.com/file/d/1fhPvA44l2Kxn5mdX4XpMaBspkpSR4yyZ/view?usp=share_link" class="btn btn-primary py-3 px-3" download="Mohammad_Momin_resume.pdf" target="_blank">Resume</a></p>
+		  <p style="margin-top: 10px;"><a href="./resume/Mohammad-Momin-Resume.pdf" target="_blank" class="btn btn-primary py-3 px-3" download>Resume</a></p>
 		  <div class="dropdown">
 			<button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			  Menu
@@ -117,7 +117,7 @@
 				<div class="row justify-content-center pb-5">
           <div class="col-md-12 heading-section text-center ftco-animate">
           	<h1 class="big big-2">Skills</h1>
-            <h2 class="mb-4" >My Skills</h2>
+            <h2 class="mb-4" >Tech Stack</h2>
           </div>
         </div>
 				<div class="skills">
@@ -261,8 +261,8 @@
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">My Statistics</h1>
-            <h2 class="mb-4">My Statistics</h2>
+            <h1 class="big big-2">Statistics</h1>
+            <h2 class="mb-4">Statistics</h2>
           </div>
         </div>
         <div class="blogs">
@@ -314,7 +314,7 @@
       </div>
 	  <!-- Git Calender -->
 	  
-	  <div style="margin-right: 200px;" id="githubCommits" class="row" onclick="gotogit()">
+	  <div id="githubCommits" class="row" onclick="gotogit()">
         <!-- GitHub Commits -->
           <div class="col offset-lg-3 offset-xl-2 p-md-5">
             <div class="d-none d-md-block" >
@@ -382,7 +382,7 @@
 		
     <div style="text-align: center;">
       <h6>Created By Mohammad</h6>
-	  <!-- <h6>Template inspirartion : https://github.com/Channa47</h6> -->
+	  <h6>Template inspirartion : https://github.com/Bhasker23</h6>
     </div>         
   
 
@@ -422,4 +422,39 @@
     responsive: true,
     tooltips: true
 	});
+
+	// function downloadResume(){
+	// 	window.open("https://drive.google.com/file/d/1fhPvA44l2Kxn5mdX4XpMaBspkpSR4yyZ/view");
+	// 	window.open("https://drive.google.com/u/0/uc?id=1fhPvA44l2Kxn5mdX4XpMaBspkpSR4yyZ&export=download");
+	// }
+
+// 	function DownloadFile(fileName) {
+//             //Set the File URL.
+//             var url = "/resume" + fileName;
+//             //Create XMLHTTP Request.
+//             var req = new XMLHttpRequest();
+//             req.open("GET", url, true);
+//             req.responseType = "blob";
+//             req.onload = function () {
+//                 //Convert the Byte Data to BLOB object.
+//                 var blob = new Blob([req.response], { type: "application/octetstream" });
+ 
+//                 //Check the Browser type and download the File.
+//                 var isIE = false || !!document.documentMode;
+//                 if (isIE) {
+//                     window.navigator.msSaveBlob(blob, fileName);
+//                 } else {
+//                     var url = window.URL || window.webkitURL;
+//                     link = url.createObjectURL(blob);
+//                     var a = document.createElement('a');
+//                     a.setAttribute("download", fileName);
+//                     a.setAttribute("href", link);
+//                     document.body.appendChild(a);
+//                     a.click();
+//                     document.body.removeChild(a);
+//                 }
+//             };
+//             req.send();
+// 			window.open('https://drive.google.com/file/d/1fhPvA44l2Kxn5mdX4XpMaBspkpSR4yyZ/view')
+//         };
 </script>
