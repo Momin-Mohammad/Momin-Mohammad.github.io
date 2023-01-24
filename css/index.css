@@ -260,7 +260,7 @@
     }
   } 
   
-   @media only screen and (min-width: 376px) and (max-width: 425px){
+   @media only screen and (min-width: 370px) and (max-width: 425px){
     .skills{
       border: 1px solid transparent;
       display: grid;
@@ -296,7 +296,7 @@
     #profileimage>img{
         width: 100%;
         height: 100%;
-        border-radius: 20px;
+        border-radius: 10px;
       }
   
       #nameDiv>h1{
