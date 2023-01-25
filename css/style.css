@@ -117,12 +117,12 @@ strong {
   font-weight: bolder; }
 
 small {
-  font-size: 80%; }
+  font-size: 70%; }
 
 sub,
 sup {
   position: relative;
-  font-size: 75%;
+  font-size: 65%;
   line-height: 0;
   vertical-align: baseline; }
 
@@ -712,6 +712,11 @@ pre {
   margin-left: 91.66667%; }
 
 @media (min-width: 576px) {
+  .col-md-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 70%;
+    flex: 0 0 70%;
+    max-width: 50%; }
   .col-sm {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -8807,7 +8812,9 @@ h1, h2, h3, h4, h5,
   .ftco-about .img-about .img {
     display: block;
     width: 100%;
-    border-radius: 90px;
+    text-align: center;
+    height: 100%;
+    border-radius: 15px;
     position: relative;
     z-index: 1; }
 

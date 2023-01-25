@@ -226,6 +226,11 @@
       display: none;
     }
 
+    #profileimage{
+      display: none;
+      width: 80%;
+    }
+
     .dropdown{
       display: unset;
     }
@@ -240,7 +245,9 @@
   
     #profileimage{
       display: none;
+      width: 80%;
     }
+
     #nameDiv>h1{
       font-size: 50px;
     }
@@ -256,8 +263,26 @@
       display: unset;
     }
   } 
+
+  /* @media only screen and (min-width: 425) and (max-width: 574) {
+    #profileimage{
+      border: 1px solid transparent;
+      width: 80%;
+      margin: auto;
+      margin-bottom: 1px;
+      display: unset;
+    }
+
+    #profileimage>img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
   
-   @media only screen and (min-width: 370px) and (max-width: 425px){
+    
+  } */
+  
+   @media only screen and (min-width: 370px) and (max-width: 575px){
     .skills{
       border: 1px solid transparent;
       display: grid;
@@ -283,7 +308,7 @@
     }
     #profileimage{
       border: 1px solid transparent;
-      width: 80%;
+      width: 60%;
       margin: auto;
       margin-bottom: 1px;
       display: unset;
@@ -341,6 +366,7 @@
     #profileimage{
       border: 1px solid transparent;
       width: 80%;
+      height: 80%;
       margin: auto;
       margin-bottom: 1px;
       display: unset;
@@ -374,3 +400,6 @@
         margin: auto;
       }
   }
+
+
+ 
