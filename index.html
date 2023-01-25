@@ -31,7 +31,7 @@
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar" style="width:100%">
 	    <div class="container">
-		  <p style="margin-top: 10px;"><a href="./resume/Mohammad-Momin-Resume.pdf" target="_blank" class="btn btn-primary py-3 px-3" download>Resume</a></p>
+		  <p style="margin-top: 10px;"><p onclick="DownloadFile('Mohammad-Momin-Resume.pdf')" class="btn btn-primary py-3 px-3">Resume</p></p>
 		  <div class="dropdown">
 			<button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			  Menu
@@ -423,38 +423,62 @@
     tooltips: true
 	});
 
+
+// 	var downloadButton = document.getElementById("download-button");
+//   downloadButton.addEventListener("click", function() {
+//     var fileUrl = "https://drive.google.com/u/0/uc?id=1fhPvA44l2Kxn5mdX4XpMaBspkpSR4yyZ&export=download";
+//     fetch(fileUrl)
+//     .then(response => response.blob())
+//     .then(blob => {
+//         const url = window.URL.createObjectURL(blob);
+//         const a = document.createElement('a');
+//         a.style.display = 'none';
+//         a.href = url;
+//         a.download = fileUrl.split('/').pop();;
+//         document.body.appendChild(a);
+//         a.click();
+//         window.URL.revokeObjectURL(url);
+//     });
+//   });
+
+
+
+
 	// function downloadResume(){
-	// 	window.open("https://drive.google.com/file/d/1fhPvA44l2Kxn5mdX4XpMaBspkpSR4yyZ/view");
 	// 	window.open("https://drive.google.com/u/0/uc?id=1fhPvA44l2Kxn5mdX4XpMaBspkpSR4yyZ&export=download");
+
+	// 	window.open("https://drive.google.com/file/d/1fhPvA44l2Kxn5mdX4XpMaBspkpSR4yyZ/view");
+		
 	// }
 
-// 	function DownloadFile(fileName) {
-//             //Set the File URL.
-//             var url = "/resume" + fileName;
-//             //Create XMLHTTP Request.
-//             var req = new XMLHttpRequest();
-//             req.open("GET", url, true);
-//             req.responseType = "blob";
-//             req.onload = function () {
-//                 //Convert the Byte Data to BLOB object.
-//                 var blob = new Blob([req.response], { type: "application/octetstream" });
+	function DownloadFile(fileName) {
+            //Set the File URL.
+            var url = "Resume/" + fileName;
+            //Create XMLHTTP Request.
+            var req = new XMLHttpRequest();
+            req.open("GET", url, true);
+            req.responseType = "blob";
+            req.onload = function () {
+                //Convert the Byte Data to BLOB object.
+                var blob = new Blob([req.response], { type: "application/octetstream" });
  
-//                 //Check the Browser type and download the File.
-//                 var isIE = false || !!document.documentMode;
-//                 if (isIE) {
-//                     window.navigator.msSaveBlob(blob, fileName);
-//                 } else {
-//                     var url = window.URL || window.webkitURL;
-//                     link = url.createObjectURL(blob);
-//                     var a = document.createElement('a');
-//                     a.setAttribute("download", fileName);
-//                     a.setAttribute("href", link);
-//                     document.body.appendChild(a);
-//                     a.click();
-//                     document.body.removeChild(a);
-//                 }
-//             };
-//             req.send();
-// 			window.open('https://drive.google.com/file/d/1fhPvA44l2Kxn5mdX4XpMaBspkpSR4yyZ/view')
-//         };
+                //Check the Browser type and download the File.
+                var isIE = false || !!document.documentMode;
+                if (isIE) {
+                    window.navigator.msSaveBlob(blob, fileName);
+                } else {
+                    var url = window.URL || window.webkitURL;
+                    link = url.createObjectURL(blob);
+                    var a = document.createElement("a");
+                    a.setAttribute("download", fileName);
+                    a.setAttribute("href", link);
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                }
+            };
+            req.send();
+			console.log(url)
+			window.open('https://drive.google.com/file/d/1fhPvA44l2Kxn5mdX4XpMaBspkpSR4yyZ/view')
+        };
 </script>
