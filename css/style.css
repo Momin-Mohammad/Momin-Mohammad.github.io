@@ -5559,7 +5559,8 @@ button.bg-dark:focus {
 .d-flex {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
-  display: flex !important; }
+  display: flex !important;
+}
 
 .d-inline-flex {
   display: -webkit-inline-box !important;
@@ -9473,7 +9474,8 @@ textarea.form-control {
   @media (max-width: 767.98px) {
     .contact-section .contact-form .btn-primary {
       display: block;
-      width: 100%; } }
+      width: 100%; } 
+    }
 
 .block-9 .form-control {
   outline: none !important;
