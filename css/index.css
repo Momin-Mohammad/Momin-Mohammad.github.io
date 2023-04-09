@@ -285,15 +285,18 @@
     
     }
     #profileimage{
+      text-align: center;
       border: 1px solid transparent;
       width: 60%;
       margin: auto;
       margin-bottom: 1px;
+      margin-left: 5%;
       display: unset;
     }
 
     #profileimage>img{
-        width: 100%;
+      text-align: center;
+        width: 90%;
         height: 100%;
         border-radius: 10px;
       }
@@ -316,6 +319,14 @@
 
      
   } 
+
+  #downloadBtn{
+    background-color: #ffbd39;
+    padding : 2% 20%;
+    border-radius: 10px;
+    color: black;
+    font-weight: 600;
+  }
  
    @media only screen and (min-width: 0px) and (max-width: 375px){
     .skills{
