@@ -8227,7 +8227,7 @@ h1, h2, h3, h4, h5,
   .ftco-navbar-light .container {
     width: 1110px;
     margin: 0 auto;
-    padding: 0; }
+    padding: 1% 0%; }
   .ftco-navbar-light .navbar-brand {
     color: #fff;
     padding-top: .7rem;
@@ -8758,8 +8758,8 @@ h1, h2, h3, h4, h5,
   .btn.btn-primary {
     background: #ffbd39;
     border: 1px solid #ffbd39 !important;
-    font-size: 18px;
-    width: 150px;
+    font-size: 16px;
+    width: 125px;
     color: #000000 !important; }
     .btn.btn-primary:hover {
       border: 1px solid #ffbd39 !important;
