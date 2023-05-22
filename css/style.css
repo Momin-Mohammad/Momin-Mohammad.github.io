@@ -9712,7 +9712,7 @@ textarea.form-control {
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round; }
 
-  @media (min-width : 290px){
+  @media (min-width : 275px){
     .btn.btn-primary {
       font-size: 15px;
       width: 105px; }
